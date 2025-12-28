@@ -1,1 +1,54 @@
+#include <stdio.h>
 
+//------------------SAYAÇ METODU İLE HESAPLAMA------------------
+
+
+
+/*
+Sayaç metodu bu işlemleri hafızada tutar ve en son sonucu ekrana yazdırır.
+
+Ayrıca çalışma mantığı da şu şekildedir;
+Faktoriyel =1 ----- i =1
+Faktoriyel =1*2 ----- i =2
+Faktoriyel =1*2*3 ----- i =3
+Faktoriyel =1*2*3*4 ----- i =4
+Faktoriyel =1*2*3*4*5 ----- i =5
+Faktoriyel =1*2*3*4*5=120
+*/
+/*
+int main(int argc, char const *argv[])
+{
+    int i, faktoriyel = 1;
+    for (i = 5; i >0; i--)
+    {
+        faktoriyel = faktoriyel * i;
+    }
+    {
+        printf("5 sayısının faktoriyeli: %d\n",faktoriyel);
+    }
+    
+    return 0;
+}
+
+Tamam her şey iyi güzel de eğer biz kullanıcıdan veri olarak almak istersek faktöriyelini alacağımız sayıyı?
+*/
+
+
+//-------------SCANF İLE VERİ ALARAK HESAPLAMA------------------
+
+
+
+/*
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+int sayi,i;
+int faktoriyel = 1;
+printf("Hangi Sayının Faktoriyelini Almak İstiyorsunuz: ");
+scanf("%d",&sayi);
+for (i = 1; i <= sayi; i++){
+faktoriyel = faktoriyel * i;
+}
+printf(" Sonuç : %d",faktoriyel);
+}
+*/

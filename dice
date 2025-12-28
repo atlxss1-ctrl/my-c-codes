@@ -1,0 +1,44 @@
+#include <stdio.h> 
+#include <stdlib.h>
+#include <time.h>
+
+void rastgeleSayilarUret(){
+    
+    printf("Zar atmak icin Enter'a basiniz..."); 
+    getchar(); // Program burada durur ve sen Enter'a basana kadar alt satıra geçmez.
+
+    int rastgeleSayi=rand();
+    printf("Zar atma örneği\n");
+    int zar1=(rand()%6+1);
+    int zar2=(rand()%6+1);
+
+    
+    int toplam = zar1 + zar2; 
+    int alltoplam;
+    alltoplam=toplam-zar2;
+
+    printf("1.Oyuncunun Zari Atildi %d geldi \n",zar1);
+    printf("2.Oyuncunun Zari atildi %d geldi \n",zar2);
+
+    
+    printf("Zarlarin Toplami: %d\n", alltoplam); // Hesapladığımız toplamı ekrana yazdırıyoruz.
+
+    printf("\n---------------------------------\n");
+}
+
+int main(int argc, char const *argv[])
+{
+    srand(time(NULL));
+    for (int i = 0; i <1; i++)
+    {
+        for (int j = 0; j < 1; j++)
+        {
+           rastgeleSayilarUret();
+           rastgeleSayilarUret();
+           rastgeleSayilarUret();
+           rastgeleSayilarUret();
+           rastgeleSayilarUret(); 
+        }
+    }
+    return 0;
+}
